@@ -1,0 +1,21 @@
+.button
+  display: block
+  width: 270px
+  height: 50px
+  color: #fff
+  line-height: 50px
+  text-align: center
+  text-decoration: none
+  border-radius: 10px
+  transition: all .3s ease-in-out
+  font:
+    size: 16px
+    weight: 500
+  &--outline
+    border: 2px solid $blue-2
+    &:hover
+      background-color: $blue-2
+      &:active
+        background-color: darken($blue-2, 15)
+        border-color: darken($blue-2, 15)
+        transition: none

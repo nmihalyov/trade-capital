@@ -1,0 +1,37 @@
+.header
+  position: fixed
+  top: 0
+  left: 0
+  padding: 15px 0
+  background-color: $blue-1
+  &__menu
+    display: flex
+    flex-flow: row nowrap
+    justify-content: space-between
+    align-items: center
+  &__nav
+    display: flex
+    flex-flow: row nowrap
+    justify-content: center
+    align-items: center
+  &__link
+    display: flex
+    flex-flow: row nowrap
+    justify-content: center
+    align-items: center
+    height: 45px
+    margin: 0 35px
+    color: #fff
+    text-decoration: none
+    transition: all .3s ease-in-out
+    font:
+      size: 18px
+      weight: 500
+    &:hover
+      color: $blue-2
+      &:active
+        color: darken($blue-2, 15)
+        transition: none
+    &--current
+      pointer-events: none
+      border-bottom: 4px solid $blue-2

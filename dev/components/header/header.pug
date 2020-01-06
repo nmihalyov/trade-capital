@@ -1,0 +1,14 @@
+include ../_ui/button/button
+
+mixin header
+  header.header.container
+    .wrapper
+      .header__menu
+        .header__logo
+          include assets/logo.svg
+        nav.header__nav
+          a.header__link.header__link--current.js-scrollto(href="#", data-scroll="main") Главная
+          a.header__link.js-scrollto(href="#", data-scroll="why") Почему робот?
+          a.header__link.js-scrollto(href="#", data-scroll="about") О нас
+          a.header__link.js-scrollto(href="#", data-scroll="faq") FAQ
+        +button-outline('Войти в кабинет', '/login')
