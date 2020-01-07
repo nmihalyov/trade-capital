@@ -1,1 +1,2 @@
-@@include('../../node_modules/YOUR_LIBRARY')
+// jQuery
+@@include('../../node_modules/jquery/dist/jquery.js')

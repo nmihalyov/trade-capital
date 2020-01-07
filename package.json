@@ -42,5 +42,8 @@
 		"imagemin-jpegtran": "^6.0.0",
 		"imagemin-optipng": "^6.0.0",
 		"sanitize.css": "^11.0.0"
+	},
+	"dependencies": {
+		"jquery": "^3.4.1"
 	}
 }
