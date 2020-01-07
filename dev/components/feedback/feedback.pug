@@ -1,0 +1,14 @@
+include ../_ui/heading/heading
+
+mixin feedback
+  section.feedback.container
+    .wrapper
+      +heading-reverse('feedback__heading', 'Реальные видео-отзывы ', 'реальных людей')
+      .feedback__row
+        +video('UD23WPeJG3s', 'feedback__video')
+        +video('xYwzQlxBPkk', 'feedback__video')
+        +video('w93aYjvwEhA', 'feedback__video')
+      .feedback__row
+        +video('UWw0I7-oUBA', 'feedback__video')
+        +video('mhTYEaA5gF4', 'feedback__video')
+        +video('WKPJSxybPg0', 'feedback__video')

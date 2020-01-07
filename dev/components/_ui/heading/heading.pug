@@ -5,3 +5,7 @@ mixin heading-main(className, text, subtext)
 mixin heading(className, text, subtext)
   h2.heading(class=className)= text
     span= subtext
+
+mixin heading-reverse(className, text, subtext)
+  h2.heading.heading--reverse(class=className)= text
+    span= subtext
