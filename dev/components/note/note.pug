@@ -1,0 +1,8 @@
+include ../_ui/button/button
+
+mixin note(text, buttonText, buttonUrl, buttonClass)
+  section.note.container
+    .wrapper
+      .note__block
+        p.note__text= text
+        +button-filled(buttonText, buttonUrl, buttonClass)
