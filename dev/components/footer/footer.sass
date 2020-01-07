@@ -1,0 +1,32 @@
+.footer
+  background-color: $blue-1
+  padding: 85px 0
+  &__block
+    display: flex
+    flex-flow: row nowrap
+    justify-content: space-between
+    align-items: flex-start
+  &__logo
+    width: 170px
+    height: 92px
+  &__info
+    padding: 0 30px
+  &__text
+    color: $grey
+    line-height: 1.65em
+    text-align: justify
+    font-size: 13px
+  &__link
+    color: $blue-2
+    text-decoration: none
+    transition: all .3s ease-in-out
+    line-height: 1.65em
+    font-size: 13px
+    &:hover
+      color: darken($blue-2, 8)
+      &:active
+        color: darken($blue-2, 15)
+        transition: none
+  &__copyright
+    width: 170px
+    height: 100px
