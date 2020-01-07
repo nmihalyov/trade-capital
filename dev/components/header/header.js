@@ -26,8 +26,9 @@ $(window).on('scroll', () => {
   debounce(setLinks, 300);
 });
 
-$('.js-scrollto').on('click', function () {
+$('.js-scrollto').on('click', function (e) {
+  e.preventDefault();
   $([document.documentElement, document.body]).animate({
     scrollTop: $(`.${$(this).attr('data-scroll')}`).offset().top - $('.header').innerHeight() - 30
-  }, 500)
+  }, 500);
 });

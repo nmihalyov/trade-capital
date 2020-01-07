@@ -1,0 +1,21 @@
+include ../_ui/heading/heading
+
+mixin calc
+  section.calc.container
+    .wrapper
+      .calc__main
+        .calc__main-info
+          +heading('calc__heading', 'Рассчитай свой ', 'доход')
+          p.calc__main-desc Наш калькулятор позволяет сделать это быстро, а результат не заставит в себе сомневаться, ведь нет ничего точнее математики
+        .calc__calculator
+          //- +calculator
+      .calc__stats
+        .calc__stats-col
+          p.calc__stats-head 0,33%
+          p.calc__stats-text средняя доходность<br>робота в сутки
+        .calc__stats-col
+          p.calc__stats-head 1789
+          p.calc__stats-text всего продано<br>роботов
+        .calc__stats-col
+          p.calc__stats-head 1165
+          p.calc__stats-text партнеров уже<br>присоединилось
