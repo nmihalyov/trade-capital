@@ -1,0 +1,73 @@
+.why
+  padding: 50px 0 40px 0
+  &__main
+    display: flex
+    flex-flow: row nowrap
+    justify-content: space-between
+    align-items: center
+    margin-bottom: 60px
+    &-col
+      width: 570px
+  &__highlight
+    padding: 30px 20px
+    border-radius: 10px
+    background-color: $blue-1
+    &-header
+      display: flex
+      flex-flow: row nowrap
+      justify-content: flex-start
+      align-items: center
+      margin-bottom: 20px
+    &-icon
+      width: 70px
+      height: 70px
+      margin-right: 30px
+      background:
+        image: url('../../img/icons/sandclock.svg')
+        size: contain
+        position: center
+        repeat: no-repeat
+    &-heading
+      font:
+        size: 24px
+        weight: 700
+    &-desc
+      color: $grey
+      line-height: 1.65em
+  &__sub
+    display: flex
+    flex-flow: row nowrap
+    justify-content: space-between
+    align-items: flex-start
+    &-col
+      width: 370px
+    &-header
+      display: flex
+      flex-flow: row nowrap
+      justify-content: flex-start
+      align-items: center
+      margin-bottom: 20px
+    &-icon
+      flex-shrink: 0
+      width: 70px
+      height: 70px
+      margin-right: 30px
+      background:
+        size: contain
+        position: center
+        repeat: no-repeat
+      &[data-icon="money"]
+        background-image: url('../../img/icons/money.svg')
+      &[data-icon="timer"]
+        background-image: url('../../img/icons/timer.svg')
+      &[data-icon="robot"]
+        background-image: url('../../img/icons/robot.svg')
+    &-heading
+      padding-right: 30px
+      font:
+        size: 24px
+        weight: 700
+    &-desc
+      color: $grey
+      font-size: 16px
+      line-height: 1.65em
