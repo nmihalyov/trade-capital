@@ -1,0 +1,41 @@
+.faq-item
+  padding: 20px
+  background-color: $blue-1
+  border-radius: 10px
+  &:not(:last-child)
+    margin-bottom: 30px
+  &__head
+    position: relative
+    cursor: pointer
+    &:hover
+      .faq-item__caret
+        background-image: url('../../img/icons/caret-blue.svg')
+    &--opened
+      .faq-item__caret
+        transform: rotate(180deg)
+  &__heading
+    line-height: 1.2em
+    padding-right: 60px
+    font:
+      size: 30px
+      weight: 700
+  &__caret
+    position: absolute
+    right: 0
+    top: 10px
+    width: 30px
+    height: 17px
+    transition: all .3s ease-in-out
+    background:
+      image: url('../../img/icons/caret.svg')
+      size: contain
+      position: center
+      repeat: no-repeat
+    &:before
+      content: ''
+      background-image: url('../../img/icons/caret-blue.svg')
+  &__content
+    display: none
+    margin-top: 20px
+    color: $grey
+    line-height: 1.65em

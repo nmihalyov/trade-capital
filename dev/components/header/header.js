@@ -29,6 +29,6 @@ $(window).on('scroll', () => {
 $('.js-scrollto').on('click', function (e) {
   e.preventDefault();
   $([document.documentElement, document.body]).animate({
-    scrollTop: $(`.${$(this).attr('data-scroll')}`).offset().top - $('.header').innerHeight() - 30
+    scrollTop: $(`.${$(this).attr('data-scroll')}`).offset().top - $('.header').innerHeight()
   }, 500);
 });
