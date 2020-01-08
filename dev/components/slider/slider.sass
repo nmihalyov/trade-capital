@@ -1,0 +1,46 @@
+.slider
+  &__container
+    overflow: hidden
+    position: relative
+    height: 590px
+    padding-left: 30px
+  &__pagination
+    position: absolute
+    left: 0
+    top: 50%
+    width: 10px
+    transform: translateX(-50%)
+    span
+      width: 10px
+      height: 10px
+      margin: 10px 0 !important
+      background-color: $blue-1
+      transition: all .3s ease-in-out
+      &.swiper-pagination-bullet-active
+        background-color: $blue-2
+  &__slide
+    overflow: hidden
+    border-radius: 10px
+    background-color: $blue-1
+  &__image
+    width: 100%
+    height: 420px
+    background:
+      size: cover
+      position: center
+      repeat: no-repeat
+  &__info
+    padding: 20px
+    &-name
+      height: 82px
+      margin-bottom: 10px
+      line-height: 1.2em
+      font:
+        size: 36px
+        weight: 900
+    &-position
+      color: $blue-2
+      line-height: 1.65em
+      font:
+        size: 24px
+        weight: 500

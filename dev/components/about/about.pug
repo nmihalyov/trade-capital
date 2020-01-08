@@ -1,4 +1,5 @@
 include ../_ui/heading/heading
+include ../slider/slider
 
 mixin about
   section.about.container
@@ -10,6 +11,7 @@ mixin about
           p.about__desc Два года успешной торговли с роботом «Trade Capital Bot». Более 10 000 довольных партнёров.  Сотрудничаем только с лицензироваными брокерами, работающими на валютном рынке более десяти лет 
           p.about__desc Мы рассматриваем для сотрудничества только серьёзных и надёжных брокеров, поэтому за безопасность  своих средств можно не переживать
         .about__slider
+          +slider
       .about__steps
         .about__steps-item
           p.about__steps-heading Установка
