@@ -2,6 +2,16 @@
   position: relative
   display: block
   width: 370px
+  &:not(.input--default)
+    .input__field
+      &::-webkit-input-placeholder
+        opacity: 0
+      &::-moz-placeholder
+        opacity: 0
+      &:-ms-input-placeholder
+        opacity: 0
+      &:-moz-placeholder
+        opacity: 0
   &--focused,
   &--filled
     .input
@@ -23,6 +33,13 @@
             &:active
               color: darken($blue-2, 15)
               transition: none
+  &--default
+  &__label
+    margin-bottom: 5px
+    line-height: 1.65em
+    font-size: 18px
+    span
+      color: $blue-2
   &__placeholder
     position: absolute
     left: 10px
@@ -45,14 +62,6 @@
     color: $blue-1
     transition: all .3s ease-in-out
     font-size: 16px
-    &::-webkit-input-placeholder
-      opacity: 0
-    &::-moz-placeholder
-      opacity: 0
-    &:-ms-input-placeholder
-      opacity: 0
-    &:-moz-placeholder
-      opacity: 0
   &__send
     position: absolute
     top: calc(50% - 11px)

@@ -13,3 +13,9 @@ mixin input-tel(placeholder, name, required, className)
     p.input__placeholder= placeholder
     input(type="text", name=name, required=required).input__field
     button.input__send.js-send-tel(disabled) Отправить код
+
+mixin input-default(placeholder, label, labelHighlight, name, required, className)
+  label.input.input--default(class=className)
+    p.input__label= label
+      <span>#{labelHighlight}</span>
+    input(type="text", name=name, placeholder=placeholder required=required).input__field

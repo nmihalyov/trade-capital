@@ -7,6 +7,7 @@ window.onload = () => {
 
   @@include('../components/header/header.js')
   @@include('../components/hero/hero.js')
+  @@include('../components/calculator/calculator.js')
   @@include('../components/slider/slider.js')
   @@include('../components/faq-item/faq-item.js')
 

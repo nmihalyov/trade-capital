@@ -144,7 +144,34 @@
               <h2 class="heading calc__heading">Рассчитай свой <span>доход</span></h2>
               <p class="calc__main-desc">Наш калькулятор позволяет сделать это быстро, а результат не заставит в себе сомневаться, ведь нет ничего точнее математики</p>
             </div>
-            <div class="calc__calculator"></div>
+            <div class="calc__calculator">
+              <div class="calculator">
+                <div class="calculator__inputs">
+                  <label class="input input--default calculator__input">
+                    <p class="input__label">Ваш депозит <span>$</span></p>
+                    <input class="input__field" type="text" name="deposit" placeholder="Введите число"/>
+                  </label>
+                  <label class="input input--default calculator__input">
+                    <p class="input__label">Срок торговли <span>в месяцах</span></p>
+                    <input class="input__field" type="text" name="term" placeholder="Введите число"/>
+                  </label>
+                </div>
+                <div class="calculator__range">
+                  <p class="calculator__range-label"><span>Процент</span> ежедневной доходности:</p>
+                  <input class="calculator__range-input js-range" type="text" name="profit" value=""/>
+                  <div class="calculator__grid">
+                    <p class="calculator__grid-item calculator__grid-item--check">0</p>
+                    <p class="calculator__grid-item">1</p>
+                    <p class="calculator__grid-item">2</p>
+                    <p class="calculator__grid-item">3</p>
+                    <p class="calculator__grid-item">4</p>
+                    <p class="calculator__grid-item">5</p>
+                  </div>
+                </div>
+                <p class="calculator__text">Ваш депозит составит</p>
+                <p class="calculator__total">$<span>0</span></p>
+              </div>
+            </div>
           </div>
           <div class="calc__stats">
             <div class="calc__stats-col">

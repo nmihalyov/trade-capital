@@ -1,0 +1,83 @@
+.calculator
+  width: 765px
+  padding: 30px 30px 25px 30px
+  background-color: $blue-1
+  border-radius: 10px
+  &__inputs
+    display: flex
+    flex-flow: row nowrap
+    justify-content: space-between
+    align-items: center
+    margin-bottom: 25px
+  &__input
+    width: 335px
+  &__range
+    &-label
+      margin-bottom: 10px
+      line-height: 1.65em
+      font-size: 18px
+      span
+        color: $blue-2
+    .irs
+      height: 16px
+      margin-bottom: 5px
+      &-min,
+      &-max
+        display: none
+      &-line
+        top: 5px
+        height: 5px
+        border-radius: 5px
+        background-color: #fff
+      &-bar
+        top: 5px
+        height: 5px
+        border-radius: 5px
+        background-color: #57B5FE
+      &-single
+        display: none
+        top: -33px
+        height: 24px
+        padding: 0 7px
+        color: $blue-1
+        background-color: #fff
+        border-radius: 5px
+        line-height: 1.65em
+        font-size: 16px
+        &:before
+          bottom: -12px
+          left: calc(50% - 6px)
+          margin-left: 0
+          border-width: 6px
+          border-top-color: #fff
+      &-handle
+        top: 0
+        width: 16px
+        height: 16px
+        background-color: $blue-2
+        border-radius: 50%
+        i
+          display: none !important
+  &__grid
+    display: flex
+    flex-flow: row nowrap
+    justify-content: space-between
+    align-items: center
+    line-height: 1.65em
+    font:
+      size: 16px
+      weight: 500
+    &-item
+      &--check
+        color: $blue-2
+  &__text
+    margin-bottom: 5px
+    text-align: center
+    line-height: 1.65em
+    font-size: 18px
+  &__total
+    text-align: center
+    line-height: 1.65em
+    font:
+      size: 24px
+      weight: 900
