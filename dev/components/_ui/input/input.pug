@@ -1,0 +1,15 @@
+mixin input-text(placeholder, name, required, className)
+  label.input(class=className)
+    p.input__placeholder= placeholder
+    input(type="text", name=name, required=required).input__field
+
+mixin input-code(placeholder, name, required, className)
+  label.input.input--code(class=className)
+    p.input__placeholder= placeholder
+    input(type="text", name=name, required=required).input__field
+
+mixin input-tel(placeholder, name, required, className)
+  label.input.input--tel(class=className)
+    p.input__placeholder= placeholder
+    input(type="text", name=name, required=required).input__field
+    button.input__send.js-send-tel(disabled) Отправить код

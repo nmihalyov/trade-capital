@@ -44,6 +44,7 @@
 		"sanitize.css": "^11.0.0"
 	},
 	"dependencies": {
+		"inputmask": "^5.0.1",
 		"jquery": "^3.4.1"
 	}
 }

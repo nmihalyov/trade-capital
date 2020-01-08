@@ -1,5 +1,5 @@
 mixin button-outline(text, link, className)
-  a.button.button--outline(class=className, href=link)= text
+  a.button.button--outline(class=className, href=link, target="_blank", rel="nofollow noopener")= text
 
 mixin button-filled(text, link, className)
-  a.button.button--filled(class=className, href=link)= text
+  a.button.button--filled(class=className, href=link, target="_blank", rel="nofollow noopener")= text

@@ -42,7 +42,7 @@
 </svg>
 
             </div>
-            <nav class="header__nav"><a class="header__link header__link--current js-scrollto" href="#" data-scroll="hero">Главная</a><a class="header__link js-scrollto" href="#" data-scroll="why">Почему робот?</a><a class="header__link js-scrollto" href="#" data-scroll="about">О нас</a><a class="header__link js-scrollto" href="#" data-scroll="faq">FAQ</a></nav><a class="button button--outline" href="//trade-capital.pro/login">Войти в кабинет</a>
+            <nav class="header__nav"><a class="header__link header__link--current js-scrollto" href="#" data-scroll="hero">Главная</a><a class="header__link js-scrollto" href="#" data-scroll="why">Почему робот?</a><a class="header__link js-scrollto" href="#" data-scroll="about">О нас</a><a class="header__link js-scrollto" href="#" data-scroll="faq">FAQ</a></nav><a class="button button--outline" href="//trade-capital.pro/login" target="_blank" rel="nofollow noopener">Войти в кабинет</a>
           </div>
         </div>
       </header>
@@ -52,7 +52,7 @@
             <div class="hero__block">
               <h1 class="heading hero__heading">Инновационное решение для <span>торговли на Forex</span></h1>
               <p class="hero__desc">Тысячи людей уже используют наши технологии для получения надёжного и стабильного дохода. Почему бы и вам не стать частью команды TCB?</p>
-              <div class="hero__buttons"><a class="button button--outline js-scroll-calc" href="#">Рассчитать доход</a><a class="button button--filled js-open-popup" href="#">Попробовать бесплатно</a>
+              <div class="hero__buttons"><a class="button button--outline js-scroll-calc" href="#" target="_blank" rel="nofollow noopener">Рассчитать доход</a><a class="button button--filled js-open-popup" href="#" target="_blank" rel="nofollow noopener">Попробовать бесплатно</a>
               </div>
             </div>
             <div class="hero__block">
@@ -165,7 +165,7 @@
       <section class="note container">
         <div class="wrapper">
           <div class="note__block">
-            <p class="note__text">Вам всегда доступна статистика вашего счёта</p><a class="button button--filled" href="//www.myfxbook.com/members">Мониторинг счёта</a>
+            <p class="note__text">Вам всегда доступна статистика вашего счёта</p><a class="button button--filled" href="//www.myfxbook.com/members" target="_blank" rel="nofollow noopener">Мониторинг счёта</a>
           </div>
         </div>
       </section>
@@ -268,7 +268,7 @@
       <section class="note container">
         <div class="wrapper">
           <div class="note__block">
-            <p class="note__text">Попробуйте TCB бесплатно прямо сейчас</p><a class="button button--filled js-open-popup" href="#">Попробовать бесплатно</a>
+            <p class="note__text">Попробуйте TCB бесплатно прямо сейчас</p><a class="button button--filled js-open-popup" href="#" target="_blank" rel="nofollow noopener">Попробовать бесплатно</a>
           </div>
         </div>
       </section>
@@ -373,6 +373,33 @@
           </div>
         </div>
       </footer>
+    </div>
+    <div class="popup">
+      <div class="popup__container">
+        <div class="popup__background"></div>
+        <div class="popup__window">
+          <div class="popup__close"></div>
+          <p class="popup__heading">Оставить заявку<br>на <span>тест робота</span></p>
+          <form class="popup__form" action="">
+            <label class="input popup__input">
+              <p class="input__placeholder">Как к вам обращаться?</p>
+              <input class="input__field" type="text" name="fullName" required="required"/>
+            </label>
+            <label class="input input--tel popup__input">
+              <p class="input__placeholder">Введите номер телефона</p>
+              <input class="input__field" type="text" name="phoneNumber" required="required"/>
+              <button class="input__send js-send-tel" disabled="disabled">Отправить код</button>
+            </label>
+            <div class="popup__actions">
+              <label class="input input--code popup__code">
+                <p class="input__placeholder">Ваш код</p>
+                <input class="input__field" type="text" name="code" required="required"/>
+              </label>
+              <button class="popup__btn js-send-form" type="submit" disabled="disabled">Отправить</button>
+            </div>
+          </form>
+        </div>
+      </div>
     </div>
   </body>
 </html>

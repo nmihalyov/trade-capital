@@ -1,0 +1,15 @@
+include ../_ui/input/input
+
+mixin popup
+  .popup
+    .popup__container
+      .popup__background
+      .popup__window
+        .popup__close
+        p.popup__heading Оставить заявку<br>на <span>тест робота</span>
+        form.popup__form(action="")
+          +input-text('Как к вам обращаться?', 'fullName', true, 'popup__input')
+          +input-tel('Введите номер телефона', 'phoneNumber', true, 'popup__input')
+          .popup__actions
+            +input-code('Ваш код', 'code', true, 'popup__code')
+            button.popup__btn.js-send-form(type="submit", disabled) Отправить
