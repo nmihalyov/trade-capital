@@ -1,3 +1,4 @@
+// scroll to calc section
 $('.js-scroll-calc').on('click', e => {
   e.preventDefault();
   $([document.documentElement, document.body]).animate({

@@ -9,3 +9,6 @@
 
 // Range slider plugin
 @@include('../../node_modules/ion-rangeslider/js/ion.rangeSlider.min.js')
+
+// Number formatting library
+@@include('../../node_modules/autonumeric/dist/autoNumeric.min.js')

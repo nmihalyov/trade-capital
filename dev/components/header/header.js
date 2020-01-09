@@ -1,5 +1,7 @@
+// set sections mentioned in header
 const sections = [$('.hero'), $('.why'), $('.about'), $('.faq')];
 
+// set current section
 const setLinks = () => {
   sections.map(el => {
     const topOffset = el.offset().top;
@@ -10,8 +12,10 @@ const setLinks = () => {
   });
 };
 
+// set once page is loaded
 setLinks();
 
+// function call frequency latency for better permoance
 const debounce = (function(){
   var timer = 0;
   return function(callback, ms){
@@ -20,13 +24,16 @@ const debounce = (function(){
   };
 })();
 
+// set on page scroll
 $(window).on('scroll', () => {
   debounce(setLinks, 300);
 });
 
+
 let windowOffset = 0;
 let headerMobileShown = false;
 
+// scroll to specific section
 $('.js-scrollto').on('click', function (e) {
   e.preventDefault();
 
@@ -45,6 +52,7 @@ $('.js-scrollto').on('click', function (e) {
   }, 500);
 });
 
+// handling mobile menu
 $('.header__burger').on('click', function () {
   $(this).toggleClass('header__burger--active');
   $('.header__mobile').toggleClass('header__mobile--active');

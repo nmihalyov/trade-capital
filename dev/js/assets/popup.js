@@ -1,5 +1,7 @@
+// window offset to top of page
 let scroll = 0;
 
+// show popup
 $('.js-open-popup').on('click', e => {
   e.preventDefault();
 
@@ -13,6 +15,7 @@ $('.js-open-popup').on('click', e => {
   $('.popup').fadeIn(300);
 });
 
+// close popup
 $('.popup__close').on('click', () => {
   $('body').css({
     'position': 'static',
@@ -24,6 +27,7 @@ $('.popup__close').on('click', () => {
   $('.popup').fadeOut(300);
 });
 
+// send popup form
 $('.js-send-tel').on('click', function (e) {
   e.preventDefault();
 

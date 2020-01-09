@@ -1,3 +1,4 @@
+// set sliders depending on device
 if ($(window).innerWidth() < 1200) {
   const slider = new Swiper('.slider__container', {
     direction: 'horizontal',

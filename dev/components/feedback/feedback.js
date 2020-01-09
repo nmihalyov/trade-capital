@@ -1,3 +1,4 @@
+// set feedback slider on mobile devices
 if ($(window).innerWidth() < 1200) {
   const feedbackSlider = new Swiper('.feedback__grid', {
     direction: 'horizontal',
