@@ -11,4 +11,15 @@ mixin header
           a.header__link.js-scrollto(href="#", data-scroll="why") Почему робот?
           a.header__link.js-scrollto(href="#", data-scroll="about") О нас
           a.header__link.js-scrollto(href="#", data-scroll="faq") FAQ
-        +button-outline('Войти в кабинет', '//trade-capital.pro/login')
+        +button-outline('Войти в кабинет', '//trade-capital.pro/login', 'header__btn')
+        .header__burger
+          span
+          span
+          span
+  .header__mobile
+    nav.header__nav
+      a.header__link.header__link--current.js-scrollto(href="#", data-scroll="hero") Главная
+      a.header__link.js-scrollto(href="#", data-scroll="why") Почему робот?
+      a.header__link.js-scrollto(href="#", data-scroll="about") О нас
+      a.header__link.js-scrollto(href="#", data-scroll="faq") FAQ
+    +button-outline('Войти в кабинет', '//trade-capital.pro/login', 'header__btn')

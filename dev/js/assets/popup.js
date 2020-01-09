@@ -19,7 +19,7 @@ $('.popup__close').on('click', () => {
     'margin-top': '0'
   });
 
-  window.scrollTo(0, scroll)
+  window.scrollTo(0, scroll);
 
   $('.popup').fadeOut(300);
 });

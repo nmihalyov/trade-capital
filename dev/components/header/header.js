@@ -24,9 +24,45 @@ $(window).on('scroll', () => {
   debounce(setLinks, 300);
 });
 
+let windowOffset = 0;
+let headerMobileShown = false;
+
 $('.js-scrollto').on('click', function (e) {
   e.preventDefault();
+
+  $('body').css({
+    'position': 'static',
+    'margin-top': '0'
+  });
+
+  headerMobileShown = false;
+
+  $('.header__burger').removeClass('header__burger--active');
+  $('.header__mobile').removeClass('header__mobile--active');
+
   $([document.documentElement, document.body]).animate({
     scrollTop: $(`.${$(this).attr('data-scroll')}`).offset().top - $('.header').innerHeight()
   }, 500);
+});
+
+$('.header__burger').on('click', function () {
+  $(this).toggleClass('header__burger--active');
+  $('.header__mobile').toggleClass('header__mobile--active');
+
+  headerMobileShown = !headerMobileShown;
+
+  if (headerMobileShown) {
+    windowOffset = window.scrollY;
+    $('body').css({
+      'position': 'fixed',
+      'margin-top': -windowOffset
+    });
+  } else {
+    $('body').css({
+      'position': 'static',
+      'margin-top': '0'
+    });
+
+    window.scrollTo(0, windowOffset);
+  }
 });

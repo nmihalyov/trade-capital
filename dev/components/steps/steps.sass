@@ -1,0 +1,19 @@
+.steps
+  display: none
+
+@media only screen and (max-width: $mobile)
+  .steps
+    display: block
+    padding: 60px 0 30px 0
+    &__item
+      &:not(:last-child)
+        margin-bottom: 40px
+    &__heading
+      margin-bottom: 20px
+      text-align: center
+      font:
+        size: 30px
+        weight: 900
+    &__text
+      text-align: center
+      color: $grey

@@ -1,4 +1,6 @@
 html
+  background-color: #12161D
+
 body
   top: 0
   left: 0
@@ -6,7 +8,8 @@ body
   padding-top: 80px
   color: #fff
   background:
-    image: url('../../img/background.png')
+    color: #12161D
+    image: url('../img/background.png')
     attachment: fixed
     position: center
     size: cover
@@ -30,18 +33,14 @@ h1, h2, h3, h4, h5, h6
     margin: 0 auto
     padding: 0 15px
 
-@media only screen and (max-width: $tablet)
-  body
-    font-size: 16px
-  .container
-    .wrapper
-      max-width: 768px
-      padding: 0 20px
 
 @media only screen and (max-width: $mobile)
   body
-    font-size: 14px
+    padding-top: 80px
+    font-size: 16px
+    background-image: none
+
   .container
     .wrapper
       max-width: 320px
-      padding: 0 10px
+      padding: 0 20px

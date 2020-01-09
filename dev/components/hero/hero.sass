@@ -29,3 +29,28 @@
       font:
         size: 24px
         weight: 300
+
+@media only screen and (max-width: $mobile)
+  .hero
+    padding: 60px 0 30px 0
+    &__grid
+      flex-flow: column nowrap
+      justify-content: flex-start
+      align-items: stretch
+    &__block
+      width: 100%
+    &__desc
+      margin: 30px 0
+      padding: 0
+    &__buttons
+      flex-flow: column nowrap
+      justify-content: flex-start
+      align-items: stretch
+    &__btn
+      margin: 0 auto 30px auto
+    &__video
+      &-desc
+        margin-bottom: 10px
+        text-align: center
+        line-height: 1.3em
+        font-size: 16px
