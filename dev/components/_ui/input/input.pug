@@ -6,7 +6,7 @@ mixin input-text(placeholder, name, required, className)
 mixin input-code(placeholder, name, required, className)
   label.input.input--code(class=className)
     p.input__placeholder= placeholder
-    input(type="text", name=name, required=required).input__field
+    input(type="text", name=name, required=required, disabled).input__field
 
 mixin input-tel(placeholder, name, required, className)
   label.input.input--tel(class=className)

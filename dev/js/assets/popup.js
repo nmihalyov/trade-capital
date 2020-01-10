@@ -33,5 +33,6 @@ $('.js-send-tel').on('click', function (e) {
 
   $(this).attr('disabled', 'disabled');
   $(this).siblings('.input__field').attr('disabled', 'disabled');
+  $('.popup__code input').removeAttr('disabled');
   $('.js-send-form').removeAttr('disabled');
 });
