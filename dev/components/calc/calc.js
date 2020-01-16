@@ -21,8 +21,8 @@ $(window).on('scroll', () => {
   // animate chart appearing while scrolling
   const chartTop = $('.calc__chart').offset().top;
   const scrollWithWindow = window.scrollY + window.innerHeight;
-  if (scrollWithWindow >= chartTop && window.scrollY - window.innerHeight / 1.5 <= chartTop + window.innerHeight / 1.5) {
-    const progress = ((scrollWithWindow) - (chartTop + window.innerHeight / 1.5));
+  if (scrollWithWindow >= chartTop && (window.scrollY - window.innerHeight / 1.5) / 3 <= (chartTop + window.innerHeight / 1.5) / 3) {
+    const progress = ((scrollWithWindow) - (chartTop + window.innerHeight / 1.5)) / 3;
     $('.calc__chart').css('width', (progress <= 100 ? progress : 100) + 'vw')
   }
 
