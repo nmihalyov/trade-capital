@@ -3,16 +3,18 @@ include ../_ui/button/button
 include ../_ui/video/video
 
 mixin hero
+  .hero-popup
+    .hero-popup__background
+    .hero-popup__container
+      .hero-popup__window
+        .hero-popup__close
   section.hero.container
-    .wrapper
-      .hero__grid
-        .hero__block
-          +heading-main('hero__heading', 'Инновационное решение для ', 'торговли на Forex')
-          p.hero__desc Тысячи людей уже используют наши технологии для получения надёжного и стабильного дохода. Почему бы и вам не стать частью команды TCB?
-          .hero__buttons
-            +button-outline('Рассчитать доход', '#', 'hero__btn js-scroll-calc')
-            +button-filled('Попробовать бесплатно', '#', 'hero__btn js-open-popup')
-        .hero__block
-          .hero__video
-            p.hero__video-desc Робот, использующий схему мультивалютного обмена
-            +video('ovUMVVgMaDU')
+    .wrapper.hero__wrapper
+      .hero__play
+        include ../_ui/video/assets/play-icon.svg
+      .hero__block.js-wow.fadeInUp
+        +heading-main('hero__heading', 'Инновационное решение для ', 'торговли на Forex')
+        p.hero__desc Тысячи людей уже используют наши технологии для получения надёжного и стабильного дохода. Почему бы и вам не стать частью команды TCB?
+        .hero__buttons
+          +button-outline('Рассчитать доход', '#', 'hero__btn js-scroll-calc')
+          +button-filled('Попробовать бесплатно', '#', 'hero__btn js-open-popup')

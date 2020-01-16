@@ -37,6 +37,7 @@ $('.js-range').ionRangeSlider({
   type: 'single',
   max: 5,
   min: 0,
+  from: 2.5,
   step: 0.1,
   onChange: data => {
     const val = data.input[0].value;

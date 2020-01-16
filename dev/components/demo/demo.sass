@@ -1,6 +1,18 @@
 .demo
-  padding: 40px 0 50px 0
+  z-index: 2
+  position: relative
+  padding: 120px 0 250px 0
+  background-color: $black
+  &__particles
+    z-index: 3
+    position: absolute
+    top: 0
+    left: 0
+    width: 1000px
+    height: 660px
   &__block
+    z-index: 4
+    position: relative
     display: flex
     flex-flow: row nowrap
     justify-content: space-between

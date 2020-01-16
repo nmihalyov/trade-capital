@@ -1,6 +1,3 @@
-// window offset to top of page
-let scroll = 0;
-
 // show popup
 $('.js-open-popup').on('click', e => {
   e.preventDefault();

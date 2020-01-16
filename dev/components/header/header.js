@@ -1,5 +1,5 @@
 // set sections mentioned in header
-const sections = [$('.hero'), $('.why'), $('.about'), $('.faq')];
+const sections = [$('.page-wrapper'), $('.why'), $('.about'), $('.faq')];
 
 // set current section
 const setLinks = () => {
@@ -12,10 +12,27 @@ const setLinks = () => {
   });
 };
 
+// set header background
+const setHeader = () => {
+  if (window.scrollY < 50) {
+    $('.header').removeClass('header--bg');
+  } else {
+    $('.header').addClass('header--bg');
+  }
+};
+
+// set hero section parallax
+const setHero = () => {
+  if (window.scrollY < window.innerHeight) {
+    $('.hero').css('transform', `translateY(${-window.scrollY / 5}px)`)
+  }
+};
+
 // set once page is loaded
+setHeader();
 setLinks();
 
-// function call frequency latency for better permoance
+// function call frequency latency for better perfomance
 const debounce = (function(){
   var timer = 0;
   return function(callback, ms){
@@ -27,10 +44,13 @@ const debounce = (function(){
 // set on page scroll
 $(window).on('scroll', () => {
   debounce(setLinks, 300);
+
+  setHero();
+
+  setHeader();
 });
 
 
-let windowOffset = 0;
 let headerMobileShown = false;
 
 // scroll to specific section
@@ -60,10 +80,10 @@ $('.header__burger').on('click', function () {
   headerMobileShown = !headerMobileShown;
 
   if (headerMobileShown) {
-    windowOffset = window.scrollY;
+    scroll = window.scrollY;
     $('body').css({
       'position': 'fixed',
-      'margin-top': -windowOffset
+      'margin-top': -scroll
     });
   } else {
     $('body').css({
@@ -71,6 +91,6 @@ $('.header__burger').on('click', function () {
       'margin-top': '0'
     });
 
-    window.scrollTo(0, windowOffset);
+    window.scrollTo(0, scroll);
   }
 });

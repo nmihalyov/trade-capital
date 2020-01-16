@@ -48,6 +48,8 @@
 		"inputmask": "^5.0.1",
 		"ion-rangeslider": "^2.3.1",
 		"jquery": "^3.4.1",
-		"swiper": "^5.2.1"
+		"particles.js": "^2.0.0",
+		"swiper": "^5.2.1",
+		"wowjs": "^1.1.3"
 	}
 }

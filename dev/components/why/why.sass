@@ -1,6 +1,17 @@
 .why
-  padding: 50px 0 40px 0
+  z-index: 2
+  position: relative
+  padding: 100px 0
+  background-color: $blue-1
+  &__particles
+    position: absolute
+    top: 0
+    right: 0
+    width: 610px
+    height: 580px
   &__main
+    z-index: 2
+    position: relative
     display: flex
     flex-flow: row nowrap
     justify-content: space-between
@@ -13,7 +24,7 @@
   &__highlight
     padding: 30px 20px
     border-radius: 10px
-    background-color: $blue-1
+    background-color: $black
     &-header
       display: flex
       flex-flow: row nowrap
@@ -37,6 +48,8 @@
       color: $grey
       line-height: 1.65em
   &__sub
+    z-index: 2
+    position: relative
     display: flex
     flex-flow: row nowrap
     justify-content: space-between

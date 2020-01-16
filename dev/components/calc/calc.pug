@@ -3,6 +3,8 @@ include ../calculator/calculator
 
 mixin calc
   section.calc.container
+    .calc__chart
+      .calc__chart-inner
     .wrapper
       .calc__main
         .calc__main-info
@@ -10,13 +12,20 @@ mixin calc
           p.calc__main-desc Наш калькулятор позволяет сделать это быстро, а результат не заставит в себе сомневаться, ведь нет ничего точнее математики
         .calc__calculator
           +calculator
+      +heading-reverse('calc__subheading', 'Статистика ', 'за декабрь')
       .calc__stats
         .calc__stats-col
-          p.calc__stats-head 0,33%
-          p.calc__stats-text средняя доходность<br>робота в сутки
+          .calc__stats-icon(data-icon="profit")
+          .calc__stats-info
+            p.calc__stats-head 0%
+            p.calc__stats-text в среднем<br>дохода в сутки
         .calc__stats-col
-          p.calc__stats-head 1789
-          p.calc__stats-text всего продано<br>роботов
+          .calc__stats-icon(data-icon="robots")
+          .calc__stats-info
+            p.calc__stats-head 0
+            p.calc__stats-text всего продано<br>роботов
         .calc__stats-col
-          p.calc__stats-head 1165
-          p.calc__stats-text партнеров уже<br>присоединилось
+          .calc__stats-icon(data-icon="partners")
+          .calc__stats-info
+            p.calc__stats-head 0
+            p.calc__stats-text партнеров<br>уже с нами

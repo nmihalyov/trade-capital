@@ -12,3 +12,9 @@
 
 // Number formatting library
 @@include('../../node_modules/autonumeric/dist/autoNumeric.min.js')
+
+// Show content whilse scrolling with animations
+@@include('../../node_modules/wowjs/dist/wow.min.js')
+
+// JS particles anumation
+@@include('../../node_modules/particles.js/particles.js')

@@ -2,17 +2,18 @@ include ../_ui/heading/heading
 
 mixin why
   section.why.container
+    .why__particles#why-particles
     .wrapper
       .why__main
+        .why__main-col
+          +heading('why__heading', 'Почему робот?')
+          p.why__main-desc Всё верно, именно робот является нашим главным козырем на рынке — просчитаные нашими специалистами до мелочей алгоритмы, отсутствие усталости и иных минусов «живого» трейдера позволяют ему приносить нам стабильный пассивный доход
         .why__main-col
           .why__highlight
             .why__highlight-header
               .why__highlight-icon
               p.why__highlight-heading Стабильный пассивный доход 
             p.why__highlight-desc Торговля ведётся автоматически<br>по выработанным алгоритмам, которые<br>вот уже более двух лет приносят стабильную прибыль 10-40% в месяц
-        .why__main-col
-          +heading('why__heading', 'Почему робот?')
-          p.why__main-desc Всё верно, именно робот является нашим главным козырем на рынке — просчитаные нашими специалистами до мелочей алгоритмы, отсутствие усталости и иных минусов «живого» трейдера позволяют ему приносить нам стабильный пассивный доход
       .why__sub
         .why__sub-col
           .why__sub-header

@@ -3,7 +3,8 @@ include ../faq-item/faq-item
 
 mixin faq
   section.faq.container
-    .wrapper
+    .faq__particles#faq-particles
+    .wrapper.faq__wrapper
       +heading('faq__heading', 'Часто задаваемые ', 'вопросы')
       .faq__grid
         .faq__column

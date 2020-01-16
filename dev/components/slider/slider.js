@@ -5,6 +5,7 @@ if ($(window).innerWidth() < 1200) {
     speed: 500,
     wrapperClass: 'slider__wrapper',
     slideClass: 'slider__slide',
+    spaceBetween: 30,
     loop: true,
     spaceBetween: 30,
     pagination: {
@@ -18,6 +19,7 @@ if ($(window).innerWidth() < 1200) {
     speed: 500,
     wrapperClass: 'slider__wrapper',
     slideClass: 'slider__slide',
+    spaceBetween: 30,
     loop: true,
     autoplay: {
       delay: 3000,

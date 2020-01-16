@@ -7,13 +7,13 @@ mixin calculator
       +input-default('Введите число', 'Срок торговли ', 'в месяцах', 'term', false, 'calculator__input')
     .calculator__range
       p.calculator__range-label <span>Процент</span> ежедневной доходности:
-      input(type="text", name="profit", value="").calculator__range-input.js-range
+      input(type="text", name="profit", value="5").calculator__range-input.js-range
       .calculator__grid
         p.calculator__grid-item.calculator__grid-item--check 0
-        p.calculator__grid-item 1
-        p.calculator__grid-item 2
+        p.calculator__grid-item.calculator__grid-item--check 1
+        p.calculator__grid-item.calculator__grid-item--check 2
         p.calculator__grid-item 3
         p.calculator__grid-item 4
         p.calculator__grid-item 5
     p.calculator__text Ваш депозит составит
-    p.calculator__total $<span>0</span>
+    p.calculator__total $<span>100 000</span>
