@@ -114,7 +114,10 @@
 
 @media only screen and (max-width: $mobile)
   .hero
-    padding: 60px 0 30px 0
+    position: static
+    height: auto
+    padding: 60px 0 0 0
+    background-image: none
     &__block
       width: 100%
     &__desc
@@ -126,3 +129,32 @@
       align-items: stretch
     &__btn
       margin: 0 auto 30px auto
+    &__play
+      position: relative
+      top: auto
+      right: auto
+      width: 320px
+      height: 520px
+      margin-left: -20px
+      background:
+        image: url('../img/hero-bg-mobile.png')
+        size: cover
+        position: top center
+        repeat: no-repeat
+      &:before
+        top: calc(50% - 70px)
+        left: calc(50% - 70px)
+        width: 140px
+        height: 140px
+      &:after
+        top: calc(50% - 52px)
+        left: calc(50% - 52px)
+        width: 104px
+        height: 104px
+
+  .hero-popup
+    &__window
+      width: 75vw
+      height: 41vw
+    &__close
+      right: -34px

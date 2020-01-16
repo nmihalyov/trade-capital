@@ -1,3 +1,20 @@
+// set hero section parallax
+const setHero = () => {
+  if (window.scrollY < window.innerHeight) {
+    $('.hero').css('transform', `translateY(${-window.scrollY / 5}px)`)
+  }
+};
+
+// set once page is loaded
+setHeader();
+
+// set on page scroll
+if (window.innerWidth >= 1200) {
+  $(window).on('scroll', () => {
+    setHero();
+  });
+}
+
 // scroll to calc section
 $('.js-scroll-calc').on('click', e => {
   e.preventDefault();

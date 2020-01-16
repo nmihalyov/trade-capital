@@ -82,11 +82,14 @@
 
 @media only screen and (max-width: $mobile)
   .calc
-    padding: 30px 0 60px 0
+    padding: 50px 0 80px 0
+    &__chart
+      height: 50vw
     &__main
       flex-flow: column nowrap
       justify-content: flex-start
       align-items: stretch
+      margin-bottom: 80px
       &-info
         width: 100%
       &-desc
@@ -94,15 +97,22 @@
     &__heading
       margin-bottom: 30px
       padding-right: 30px
+    &__subheading
+      width: 200px
+      margin: 0 auto 30px auto
+      text-align: center
     &__stats
       flex-flow: column nowrap
       justify-content: flex-start
       align-items: stretch
       &-col
         width: 100%
-        padding: 20px
+        padding: 20px 15px
         &:not(:last-child)
-          margin-bottom: 30px
+          margin-bottom: 60px
+      &-icon
+        margin-right: 20px
       &-head
         margin-bottom: 10px
+        line-height: 1.2em
         font-size: 30px

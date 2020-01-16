@@ -22,7 +22,8 @@ $(window).on('scroll', () => {
   const chartTop = $('.calc__chart').offset().top;
   const scrollWithWindow = window.scrollY + window.innerHeight;
   if (scrollWithWindow >= chartTop && window.scrollY - window.innerHeight / 1.5 <= chartTop + window.innerHeight / 1.5) {
-    $('.calc__chart').css('width', ((scrollWithWindow) - (chartTop + window.innerHeight / 1.5)) + 'vw')
+    const progress = ((scrollWithWindow) - (chartTop + window.innerHeight / 1.5));
+    $('.calc__chart').css('width', (progress <= 100 ? progress : 100) + 'vw')
   }
 
   // animate items when user scrolled to them

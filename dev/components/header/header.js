@@ -21,15 +21,7 @@ const setHeader = () => {
   }
 };
 
-// set hero section parallax
-const setHero = () => {
-  if (window.scrollY < window.innerHeight) {
-    $('.hero').css('transform', `translateY(${-window.scrollY / 5}px)`)
-  }
-};
-
 // set once page is loaded
-setHeader();
 setLinks();
 
 // function call frequency latency for better perfomance
@@ -44,8 +36,6 @@ const debounce = (function(){
 // set on page scroll
 $(window).on('scroll', () => {
   debounce(setLinks, 300);
-
-  setHero();
 
   setHeader();
 });

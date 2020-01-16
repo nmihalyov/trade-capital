@@ -12,7 +12,7 @@ new AutoNumeric('.calculator__input [name="term"]', {
 
 let deposit = 0;
 let term = 0;
-let profit = 0;
+let profit = 2.5;
 
 // calculate total deposit
 const calculate = () => {
