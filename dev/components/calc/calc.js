@@ -20,19 +20,19 @@ let statsAreAnimated = false;
 $(window).on('scroll', () => {
   // animate chart appearing while scrolling
   const chartTop = $('.calc__chart').offset().top;
-  const scrollWithWindow = window.scrollY + window.innerHeight;
-  if (scrollWithWindow >= chartTop && (window.scrollY - window.innerHeight / 1.5) / 3 <= (chartTop + window.innerHeight / 1.5) / 3) {
-    const progress = ((scrollWithWindow) - (chartTop + window.innerHeight / 1.5)) / 3;
+  const scrollWithWindow = window.scrollY + window.innerHeight * 1.2;
+  if (scrollWithWindow >= chartTop && (window.scrollY - window.innerHeight / 1.2) / 3 <= (chartTop + window.innerHeight / 1.2) / 3) {
+    const progress = ((scrollWithWindow) - (chartTop + window.innerHeight / 1.2)) / 3;
     $('.calc__chart').css('width', (progress <= 100 ? progress : 100) + 'vw')
   }
 
   // animate items when user scrolled to them
-  if (!depositIsAnimated && scrollWithWindow - 50 >= $('.calculator__total span').offset().top) {
+  if (!depositIsAnimated && scrollWithWindow - 100 >= $('.calculator__total span').offset().top) {
     animateValue('.calculator__total span', 100000, 0, 22);
     depositIsAnimated = true;
   }
   
-  if (!statsAreAnimated && scrollWithWindow - 50 >= $('.calc__stats-col').offset().top) {
+  if (!statsAreAnimated && scrollWithWindow - 100 >= $('.calc__stats-col').offset().top) {
     animateValue('.calc__stats-col:nth-child(1) .calc__stats-head', 0, 33, 33, true);
     animateValue('.calc__stats-col:nth-child(2) .calc__stats-head', 0, 1789, 20);
     animateValue('.calc__stats-col:nth-child(3) .calc__stats-head', 0, 1165, 20);

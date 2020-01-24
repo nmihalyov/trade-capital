@@ -1,5 +1,6 @@
 const wow = new WOW({
-  boxClass: 'js-wow'
+  boxClass: 'js-wow',
+  offset: 100
 });
 
 wow.init();

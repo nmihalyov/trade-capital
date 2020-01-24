@@ -12,7 +12,7 @@ $('.js-play-video').on('click', function () {
 // load local video
 $(document).ready(() => {
   const URL = $('.video--local').attr('data-url');
-  $('.video--local').append(`<video width="570" height="285" controls="" class="embed-responsive-item" data-mp4="true" id="mautic-player-0">
+  $('.video--local').append(`<video width="570" height="285" controls="" class="video__player">
     <source src=${URL} type="video/mp4">
   </video>`);
 });
